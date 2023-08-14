@@ -1,0 +1,47 @@
+<h1>Stupid Coaching</h1>
+
+<h5>Your stupid question</h5>
+
+<section class="" style="">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <figure class="bg-light p-3 rounded" style="border-left: .25rem solid #a34e78">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= @question_user %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            You
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h5>The stupid answer</h5>
+
+<section class="" style="">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <figure class="bg-warning p-3 rounded" style="border-left: .25rem solid #a34e78">
+          <blockquote class="blockquote pb-2">
+            <p>
+              <%= @coach_answer %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            Your Coach
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<%= link_to "Ask a new question!", ask_path %>
